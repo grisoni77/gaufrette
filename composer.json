@@ -1,0 +1,5 @@
+{
+    "require": {
+        "knplabs/gaufrette": "dev-master"
+    }
+}
