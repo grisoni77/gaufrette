@@ -10,7 +10,7 @@ $client = new \AmazonS3(array(
     'key' => $aws_access_key,
     'secret' => $aws_secret_key
 ));
-$adapter = new S3Adapter($client, 'gr77-prova');
+$adapter = new S3Adapter($client, $aws_s3_bucketname);
 $filesystem = new \Gaufrette\Filesystem($adapter);
 
 if ( ! $filesystem->has('foo')) {
